@@ -28,7 +28,7 @@ class LoginController extends GetxController {
     // cek status login jika sudah login akan di redirect ke menu home
     String status = StorageProvider.read(StorageKey.status);
     log("status : $status");
-    if(status == 'logged'){
+    if (status == 'logged'){
       Get.offAllNamed(Routes.HOME);
     }
   }
@@ -65,6 +65,4 @@ class LoginController extends GetxController {
     Get.snackbar("Error", e.toString(), backgroundColor: Colors.red);
     }
   }
-
-
 }
