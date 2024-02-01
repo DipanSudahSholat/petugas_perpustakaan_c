@@ -8,14 +8,14 @@ import '../../../data/provider/api_provider.dart';
 import 'package:dio/dio.dart' as dio;
 
 class AddBookController extends GetxController {
-  final GlobalKey<FormState> formKey = GlobalKey<FormState>();
-  final TextEditingController judulController = TextEditingController();
-  final TextEditingController penulisController = TextEditingController();
-  final TextEditingController penerbitController = TextEditingController();
-  final TextEditingController tahunTerbitController = TextEditingController();
-  final loading = false.obs;
-  final count = 0.obs;
-  final BookController _bookController = Get.find();
+    final GlobalKey<FormState> formKey = GlobalKey<FormState>();
+    final TextEditingController judulController = TextEditingController();
+    final TextEditingController penulisController = TextEditingController();
+    final TextEditingController penerbitController = TextEditingController();
+    final TextEditingController tahunTerbitController = TextEditingController();
+    final loading = false.obs;
+    final count = 0.obs;
+    final BookController _bookController = Get.find();
 
 
   @override
